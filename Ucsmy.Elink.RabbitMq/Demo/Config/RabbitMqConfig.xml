@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<mqConnectionConfig>
+  <HostName>172.17.22.23</HostName>
+  <UserName>elink</UserName>
+  <Password>123456</Password>
+  <VirtualHost>/</VirtualHost>
+  <RequestedHeartbeat>60</RequestedHeartbeat>
+  <Port>5672</Port>
+</mqConnectionConfig>
+

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B51FA569-ABB1-4493-ADD4-B5C2BC73F3ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ucsmy.Elink.RabbitMq.SDK", "RabbitMqHelper\Ucsmy.Elink.RabbitMq.SDK.csproj", "{FC6BB6F8-48B8-45B2-89F8-E6660D01FFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{70681C1B-634A-4882-808E-04B5CE92C01A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B51FA569-ABB1-4493-ADD4-B5C2BC73F3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51FA569-ABB1-4493-ADD4-B5C2BC73F3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51FA569-ABB1-4493-ADD4-B5C2BC73F3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51FA569-ABB1-4493-ADD4-B5C2BC73F3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6BB6F8-48B8-45B2-89F8-E6660D01FFAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6BB6F8-48B8-45B2-89F8-E6660D01FFAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6BB6F8-48B8-45B2-89F8-E6660D01FFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6BB6F8-48B8-45B2-89F8-E6660D01FFAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70681C1B-634A-4882-808E-04B5CE92C01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70681C1B-634A-4882-808E-04B5CE92C01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70681C1B-634A-4882-808E-04B5CE92C01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70681C1B-634A-4882-808E-04B5CE92C01A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

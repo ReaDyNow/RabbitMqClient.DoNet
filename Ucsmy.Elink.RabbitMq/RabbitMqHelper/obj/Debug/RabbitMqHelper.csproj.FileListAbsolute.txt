@@ -1,0 +1,16 @@
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMqHelper.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMqHelper.pdb
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMQ.Client.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\Ucs.Common.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMQ.Client.xml
+D:\MyProject\Toys\Test\RabbitMqHelper\obj\Debug\RabbitMqHelper.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\obj\Debug\RabbitMqHelper.pdb
+D:\MyProject\Toys\Test\RabbitMqHelper\obj\Debug\RabbitMqHelper.csprojResolveAssemblyReference.cache
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Debug\RabbitMqHelper.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Debug\RabbitMqHelper.pdb
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Debug\RabbitMQ.Client.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Debug\RabbitMQ.Client.xml
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\obj\Debug\RabbitMqHelper.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\obj\Debug\RabbitMqHelper.pdb
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\obj\Debug\RabbitMqHelper.csprojResolveAssemblyReference.cache
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Debug\RabbitMqHelper.dll.config

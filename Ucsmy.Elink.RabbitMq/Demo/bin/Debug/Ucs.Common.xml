@@ -1,0 +1,2181 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ucs.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Ucs.Common.AreaInfo.MobileUtils">
+            <summary>
+            手机号归属信息工具类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.AreaInfo.MobileUtils.GetMobileProductInfo(System.String)">
+            <summary>
+            获取手机号归属信息
+            </summary>
+            <param name="mobile">手机号</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.AreaInfo.MobileProductInfo">
+            <summary>
+            手机号归属信息
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.AreaInfo.MobileProductInfo.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.AreaInfo.MobileProductInfo.SP">
+            <summary>
+            运营商名称
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.AreaInfo.MobileProductInfo.Province">
+            <summary>
+            归属省份
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.AreaInfo.MobileProductInfo.City">
+            <summary>
+            归属市
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.AreaInfo.PaipaiMobileProductInfo">
+            <summary>
+            拍拍手机号归属信息
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.CacheUtils">
+            <summary>
+            缓存处理工具类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.GetCache(System.String)">
+            <summary>
+            获取数据缓存
+            </summary>
+            <param name="CacheKey">键</param>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.SetCache(System.String,System.Object)">
+            <summary>
+            设置数据缓存
+            </summary>
+            <param name="CacheKey">缓存的键</param>
+            <param name="objObject">缓存的值</param>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.SetCache(System.String,System.Object,System.Web.Caching.CacheDependency)">
+            <summary>
+            设置某缓存的值和跟踪缓存依赖项
+            </summary>
+            <param name="CacheKey">缓存的键</param>
+            <param name="objObject">缓存的值</param>
+            <param name="objDependency">缓存依赖项</param>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.SetCache(System.String,System.Object,System.Web.Caching.CacheDependency,System.DateTime,System.TimeSpan)">
+            <summary>
+            设置某缓存的值和跟踪缓存依赖项
+            </summary>
+            <param name="CacheKey">缓存的键</param>
+            <param name="objObject">缓存的值</param>
+            <param name="objDependency">缓存依赖项</param>
+            <param name="AbsoluteExpiration">缓存移出的时间</param>
+            <param name="SlidingExpiration">缓存的有效期时间长度</param>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.SetCache(System.String,System.Object,System.TimeSpan)">
+            <summary>
+            设置某缓存的值
+            </summary>
+            <param name="CacheKey">缓存的键</param>
+            <param name="objObject">缓存的值</param>
+            <param name="SlidingExpiration">最后一次访问过期时长</param>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.SetCache(System.String,System.Object,System.Int32)">
+            <summary>
+             设置某缓存的值(绝对过期时长)
+            </summary>
+            <param name="CacheKey">缓存的键</param>
+            <param name="objObject">缓存的值</param>
+            <param name="absoluteExpiration">绝对过期时长，所添加对象将过期并被从缓存中移除的有效时长（单位：秒）</param>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.RemoveCache(System.String)">
+            <summary>
+            移除指定数据缓存
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.CacheUtils.RemoveAllCache">
+            <summary>
+            移除全部缓存
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.CallService">
+            <summary>
+            调用服务处理类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.CallService.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.CallService.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="message">正确信息</param>
+        </member>
+        <member name="M:Ucs.Common.CallService.SetOK(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            调用成功，设置返回值
+            </summary>
+            <param name="resultValue"></param>
+        </member>
+        <member name="M:Ucs.Common.CallService.AddResultValue(System.String,System.String)">
+            <summary>
+            添加
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Ucs.Common.CallService.SetData(System.String,System.Object)">
+            <summary>
+            添加
+            </summary>
+            <param name="key"></param>
+            <param name="val"></param>
+        </member>
+        <member name="M:Ucs.Common.CallService.GetResultValue(System.String)">
+            <summary>
+            取值
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.CallService.SetOK(System.String)">
+            <summary>
+            调用成功
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.CallService.SetFailure(System.String)">
+            <summary>
+            调用失败
+            </summary>
+            <param name="errorMessage"></param>
+        </member>
+        <member name="M:Ucs.Common.CallService.SetFailure(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            调用失败
+            </summary>
+            <param name="errorMessage"></param>
+            <param name="resultValue"></param>
+        </member>
+        <member name="P:Ucs.Common.CallService.ResultValue">
+            <summary>
+            返回值
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.CallService.DicData">
+            <summary>
+            返回值
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.CallService.ErrorCode">
+            <summary>
+            错误码
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.CallService.ErrorMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.CallService.Message">
+            <summary>
+            正确信息
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.CallService.IsSuccess">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.CallService.IsError">
+            <summary>
+            是否异常
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.AppSettingsHelper">
+            <summary>
+            配置文件appSettings节点的帮助方法
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetBoolValue(System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的bool类型的值
+            </summary>
+            <param name="key">索引键</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetIntValue(System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的int类型的值
+            </summary>
+            <param name="key">索引键</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetString(System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的字符串类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetString(System.String,System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的字符串类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="defaultValue">默认值</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetStringArray(System.String,System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的string[]类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="separator">分隔符</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetStringArray(System.String,System.String,System.String[])">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的string[]类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="separator">分隔符</param>
+            <param name="defaultValue">默认值</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.getStringArray(System.String,System.String,System.Boolean,System.String[])">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的string[]类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="separator">分隔符</param>
+            <param name="valueRequired">指定配置文件中是否必须需要配置有该名称的元素，传入False则方法返回默认值，反之抛出异常</param>
+            <param name="defaultValue">默认值</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetInt32(System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的Int类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <returns>Int</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetInt32(System.String,System.Int32)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的Int类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="defaultValue">默认值</param>
+            <returns>Int</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.getInt32(System.String,System.Nullable{System.Int32})">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的Int类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="defaultValue">默认值</param>
+            <returns>Int</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetBoolean(System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的布尔类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <returns>布尔值</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetBoolean(System.String,System.Boolean)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的布尔类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="defaultValue">默认值</param>
+            <returns>布尔值</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.getBoolean(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的布尔类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="defaultValue">默认值</param>
+            <returns>布尔值</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetTimeSpan(System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的时间间隔类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <returns>时间间隔</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetTimeSpan(System.String,System.TimeSpan)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的时间间隔类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="defaultValue">默认值</param>
+            <returns>时间间隔</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetDateTime(System.String)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的日期时间类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <returns>时间间隔</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.GetDateTime(System.String,System.DateTime)">
+            <summary>
+            获取配置文件中appSettings节点下指定索引键的日期时间类型的的值
+            </summary>
+            <param name="key">索引键</param>
+            <param name="defaultValue">默认值</param>
+            <returns>时间间隔</returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.getValue``1(System.String,System.Func{System.String,``0,``0},System.Nullable{``0})">
+            <summary>
+            获取配置文件appSettings集合中指定索引的值
+            </summary>
+            <typeparam name="T">返回值类型参数</typeparam>
+            <param name="key">索引键</param>
+            <param name="parseValue">将指定索引键的值转化为返回类型的值的委托方法</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.AppSettingsHelper.getValue(System.String,System.Boolean,System.String)">
+            <summary>
+            获取配置文件appSettings集合中指定索引的值
+            </summary>
+            <param name="key">索引</param>
+            <param name="valueRequired">指定配置文件中是否必须需要配置有该名称的元素，传入False则方法返回默认值，反之抛出异常</param>
+            <param name="defaultValue">默认值</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="T:Ucs.Common.Config.DefaultConfigFileManager">
+            <summary>
+            文件配置管理基类
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Config.DefaultConfigFileManager.m_configfilepath">
+            <summary>
+            文件所在路径变量
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Config.DefaultConfigFileManager.m_configinfo">
+            <summary>
+            临时配置对象变量
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Config.DefaultConfigFileManager.m_lockHelper">
+            <summary>
+            锁对象
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Config.DefaultConfigFileManager.LoadConfig(System.DateTime@,System.String,Ucs.Common.Config.IConfigInfo)">
+            <summary>
+            加载(反序列化)指定对象类型的配置对象
+            </summary>
+            <param name="fileoldchange">文件加载时间</param>
+            <param name="configFilePath">配置文件所在路径</param>
+            <param name="configinfo">相应的变量 注:该参数主要用于设置m_configinfo变量 和 获取类型.GetType()</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Config.DefaultConfigFileManager.LoadConfig(System.DateTime@,System.String,Ucs.Common.Config.IConfigInfo,System.Boolean)">
+            <summary>
+            加载(反序列化)指定对象类型的配置对象
+            </summary>
+            <param name="fileoldchange">文件加载时间</param>
+            <param name="configFilePath">配置文件所在路径(包括文件名)</param>
+            <param name="configinfo">相应的变量 注:该参数主要用于设置m_configinfo变量 和 获取类型.GetType()</param>
+            <param name="checkTime">是否检查并更新传递进来的"文件加载时间"变量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Config.DefaultConfigFileManager.DeserializeInfo(System.String,System.Type)">
+            <summary>
+            反序列化指定的类
+            </summary>
+            <param name="configfilepath">config 文件的路径</param>
+            <param name="configtype">相应的类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Config.DefaultConfigFileManager.SaveConfig">
+            <summary>
+            保存配置实例(虚方法需继承)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Config.DefaultConfigFileManager.SaveConfig(System.String,Ucs.Common.Config.IConfigInfo)">
+            <summary>
+            保存(序列化)指定路径下的配置文件
+            </summary>
+            <param name="configFilePath">指定的配置文件所在的路径(包括文件名)</param>
+            <param name="configinfo">被保存(序列化)的对象</param>
+            <returns></returns>
+        </member>
+        <member name="P:Ucs.Common.Config.DefaultConfigFileManager.ConfigFilePath">
+            <summary>
+            文件所在路径
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.Config.DefaultConfigFileManager.ConfigInfo">
+            <summary>
+            临时配置对象
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.Config.IConfigFileManager">
+            <summary>
+            配置管理类接口
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Config.IConfigFileManager.LoadConfig">
+            <summary>
+            加载配置文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Config.IConfigFileManager.SaveConfig">
+            <summary>
+            保存配置文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.Config.SerializationHelper">
+            <summary>
+            SerializationHelper 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Config.SerializationHelper.Load(System.Type,System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="type">对象类型</param>
+            <param name="filename">文件路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Config.SerializationHelper.Save(System.Object,System.String)">
+            <summary>
+            序列化
+            </summary>
+            <param name="obj">对象</param>
+            <param name="filename">文件路径</param>
+        </member>
+        <member name="M:Ucs.Common.Config.SerializationHelper.Serialize(System.Object)">
+            <summary>
+            xml序列化成字符串
+            </summary>
+            <param name="obj">对象</param>
+            <returns>xml字符串</returns>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.WriteCookie(System.String,System.String)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <param name="strValue">值</param>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.WriteCookie(System.String,System.String,System.Int32)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <param name="strValue">值</param>
+            <param name="expires">过期时间(分钟)</param>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.WriteCookie(System.String,System.String,System.String)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <param name="key">键</param>
+            <param name="strValue">值</param>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.WriteCookie(System.String,System.String,System.String,System.String)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <param name="key">键</param>
+            <param name="strValue">值</param>
+            <param name="domain">域</param>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.WriteCookie(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <param name="key">键</param>
+            <param name="strValue">值</param>
+            <param name="expires">过期时间(分钟)</param>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.WriteCookie(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <param name="key">键</param>
+            <param name="strValue">值</param>
+            <param name="expires">过期时间(分钟)</param>
+            <param name="domain">域</param>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.GetCookie(System.String)">
+            <summary>
+            读cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <returns>cookie值</returns>
+        </member>
+        <member name="M:Ucs.Common.CookieHelper.GetCookie(System.String,System.String)">
+            <summary>
+            读cookie值
+            </summary>
+            <param name="cookieName">名称</param>
+            <param name="key">键</param>
+            <returns>cookie值</returns>
+        </member>
+        <member name="T:Ucs.Common.Cryptogram.Cryptogram">
+            <summary>
+            加解密工具类
+            默认使用CBC模式；
+            填充方式均默认使用PKCS7Paddings
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.Cryptogram.GenerateAuthenticator(System.String,System.String)">
+            <summary>
+            生成签名验证码
+            base64 (3DES(SHA1()))
+            </summary>
+            <param name="key">加密Key</param>
+            <param name="data">加密串</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.Cryptogram.Des3">
+            <summary>
+            DES3加密解密
+            使用CBC模式；
+            填充方式均默认使用PKCS7Padding
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.Des3.Des3EncodeCBC(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>  
+            DES3 CBC模式加密  
+            </summary>  
+            <param name="key">密钥</param>  
+            <param name="iv">IV</param>  
+            <param name="data">明文的byte数组</param>  
+            <returns>密文的byte数组</returns>  
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.Des3.Des3DecodeCBC(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>  
+            DES3 CBC模式解密  
+            </summary>  
+            <param name="key">密钥</param>  
+            <param name="iv">IV</param>  
+            <param name="data">密文的byte数组</param>  
+            <returns>明文的byte数组</returns>  
+        </member>
+        <member name="T:Ucs.Common.Cryptogram.DESHelper">
+            <summary>
+            DESHelper 的摘要说明
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.DESHelper.DESEncrypt(System.String,System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="srcData">待加密的字符串</param>
+            <param name="encryPWD">加密密钥</param>
+            <returns>加密成功返回加密后的字符串,失败返回源串</returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.DESHelper.DESDecrypt(System.String,System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="encryptData">待解密的字符串</param>
+            <param name="encryPWD">解密密钥</param>
+            <returns>解密成功返回解密后的字符串,失败返源串</returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.DESHelper.Encrypt(System.String,System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="srcData">待加密的字符串</param>
+            <param name="m_Key">加密密钥</param>
+            <returns>加密成功返回加密后的字符串,失败返回源串</returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.DESHelper.Decrypt(System.String,System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="encryptData">待解密的字符串</param>
+            <param name="m_Key">解密密钥</param>
+            <returns>解密成功返回解密后的字符串,失败返源串</returns>
+        </member>
+        <member name="T:Ucs.Common.Cryptogram.EncryptHelper">
+             <summary>
+            Encrypt 的摘要说明
+             </summary>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.DESEncrypt(System.String,System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="EncryptString">待加密的字符串</param>
+            <param name="EncryptKey">加密密钥</param>
+            <returns>加密成功返回加密后的字符串,失败返回源串</returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.DESDecrypt(System.String,System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="EncryptString">待解密的字符串</param>
+            <param name="EncryptKey">解密密钥</param>
+            <returns>解密成功返回解密后的字符串,失败返源串</returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.SignDataForCert(System.String,System.String)">
+            <summary>
+             证书加密 
+            </summary>
+            <param name="srcData">源数据</param>
+            <param name="xpath">证书路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.VerifyDataForCert(System.String,System.String,System.String)">
+            <summary>
+            证书验签名
+            </summary>
+            <param name="srcData">明文</param>
+            <param name="token">签名后Base64密文</param>
+            <param name="xpath">证书路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.CertEncrypt(System.String,System.String)">
+            <summary>
+            证书加密(失败请检查证书是否正确或者明文是否有效)
+            </summary>
+            <param name="srcData">明文</param>
+            <param name="cerPath">公钥证书路径(.cer)</param>
+            <returns>加密后Base64</returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.CertDecrypt(System.String,System.String,System.String)">
+            <summary>
+            证书解密(失败请检查证书密码是否正确或者密文是否有效)
+            </summary>
+            <param name="enData">密文</param>
+            <param name="cerPath">私钥证书路径(.pfx)</param>
+            <param name="cerPwd">访问证书密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.EncodeBase64(System.String,System.String)">
+            <summary> 
+            将字符串使用base64算法加密 
+            </summary> 
+            <param name="code_type">编码类型（编码名称） 
+            * 代码页 名称 
+            * 1200 "UTF-16LE"、"utf-16"、"ucs-2"、"unicode"或"ISO-10646-UCS-2" 
+            * 1201 "UTF-16BE"或"unicodeFFFE" 
+            * 1252 "windows-1252" 
+            * 65000 "utf-7"、"csUnicode11UTF7"、"unicode-1-1-utf-7"、"unicode-2-0-utf-7"、"x-unicode-1-1-utf-7"或"x-unicode-2-0-utf-7" 
+            * 65001 "utf-8"、"unicode-1-1-utf-8"、"unicode-2-0-utf-8"、"x-unicode-1-1-utf-8"或"x-unicode-2-0-utf-8" 
+            * 20127 "us-ascii"、"us"、"ascii"、"ANSI_X3.4-1968"、"ANSI_X3.4-1986"、"cp367"、"csASCII"、"IBM367"、"iso-ir-6"、"ISO646-US"或"ISO_646.irv:1991" 
+            * 54936 "GB18030"    
+            </param> 
+            <param name="code">待加密的字符串</param> 
+            <returns>加密后的字符串</returns> 
+        </member>
+        <member name="M:Ucs.Common.Cryptogram.EncryptHelper.DecodeBase64(System.String,System.String)">
+            <summary> 
+            将字符串使用base64算法解密 
+            </summary> 
+            <param name="code_type">编码类型</param> 
+            <param name="code">已用base64算法加密的字符串</param> 
+            <returns>解密后的字符串</returns> 
+        </member>
+        <member name="T:Ucs.Common.DataAnnotations.GreaterThanAttribute">
+            <summary>
+            属性值应该大于
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.DataAnnotations.MinLengthAttribute">
+            <summary>
+            数组或集合最小长度
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.DataAnnotations.MinValueAttribute">
+            <summary>
+            属性是小值
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.DataAnnotations.Validator`1">
+            <summary>
+             实体校验类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Ucs.Common.DataAnnotations.Validator`1.Validate(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.DataMasking">
+            <summary>
+            数据脱敏工具类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataMasking.GetMobile(System.String)">
+            <summary>
+            将手机号中间四位用"****"代替
+            </summary>
+            <param name="mobile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataMasking.GetEmail(System.String)">
+            <summary>
+            邮箱号显示前两位和末两位，其余隐藏
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataMasking.GetBankAccount(System.String)">
+            <summary>
+            只显示后四位 此处反显用户账号信息，8位及以下全部显示；9~12位显示前4和后4个字符，其余隐藏；13个以上显示前8位及末尾2位
+            </summary>
+            <param name="bankAccount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.DataMaskingAttribute">
+            <summary>
+            标识类属性需要掩盖输出
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.DataMaskingAttribute.MaskType">
+            <summary>
+            掩盖类型
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.DataMaskingAttribute.DataMaskingType">
+            <summary>
+            掩盖类型
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DataMaskingAttribute.DataMaskingType.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DataMaskingAttribute.DataMaskingType.Email">
+            <summary>
+            邮箱地址
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DataMaskingAttribute.DataMaskingType.BankAccount">
+            <summary>
+            银行卡号
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.DataSign2.ISigner">
+            <summary>
+            签名
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.ISigner.Signature(System.String)">
+            <summary>
+            签名
+            </summary>
+            <param name="data">被签名字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.ISigner.Signature(System.Byte[])">
+            <summary>
+            签名
+            </summary>
+            <param name="data">被签名字符数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.IVerifier.Verify(System.String,System.String)">
+            <summary>
+            验签
+            </summary>
+            <param name="source">验签字符串</param>
+            <param name="signature">签名字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.IVerifier.Verify(System.Byte[],System.Byte[])">
+            <summary>
+            验签
+            </summary>
+            <param name="source">验签字符数组</param>
+            <param name="signature">签名字符数组</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.DataSign2.RsaCerVerifier">
+            <summary>
+            Pem格式公钥验签
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DataSign2.RsaCerVerifier.Algorithm">
+            <summary>
+            算法
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.RsaCerVerifier.#ctor(System.String,System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="fileName">公钥文件路径</param>
+            <param name="defaultAlgorithm">默认的算法</param>
+        </member>
+        <member name="T:Ucs.Common.DataSign2.RsaPemVerifier">
+            <summary>
+                Pem格式公钥验签
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.RsaPemVerifier.#ctor(System.String,System.String)">
+            <summary>
+                构造方法
+            </summary>
+            <param name="fileName"></param>
+            <param name="defaultAlgorithm"></param>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.RsaPemVerifier.ConvertFromPemPublicKey(System.String)">
+            <summary>
+                将pem格式公钥(1024 or 2048)转换为RSAParameters
+            </summary>
+            <param name="pemFileConent">pem公钥内容</param>
+            <returns>转换得到的RSAParamenters</returns>
+        </member>
+        <member name="T:Ucs.Common.DataSign2.RsaPfxSigner">
+            <summary>
+                RSA签名
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.RsaPfxSigner.#ctor(System.String,System.String,System.String)">
+            <summary>
+                构造方法
+            </summary>
+            <param name="path">证书路径</param>
+            <param name="password">证书密码</param>
+            <param name="defaultAlgorithm">算法，默认是sha1</param>
+        </member>
+        <member name="T:Ucs.Common.DataSign2.SignatureFactory">
+            <summary>
+            证书工厂
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.AddSigner(System.String,Ucs.Common.DataSign2.ISigner)">
+            <summary>
+            添加证书私钥
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.AddVerifier(System.String,Ucs.Common.DataSign2.IVerifier)">
+            <summary>
+            添加证书公钥
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.GetSigner">
+            <summary>
+            获取私钥
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.GetSigner(System.String)">
+            <summary>
+            获取私钥
+            </summary>
+            <param name="key">Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.GetVerifier">
+            <summary>
+            获取公钥
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.GetVerifier(System.String)">
+            <summary>
+            获取公钥
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.ClearVerifier">
+            <summary>
+            清除公钥
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataSign2.SignatureFactory.ClearSigner">
+            <summary>
+            清除私钥
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.DataSign.DataSignHelper">
+            <summary>
+            签名、验签
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DataSign.DataSignHelper.PfxPath">
+            <summary>
+            签名证书路径
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DataSign.DataSignHelper.CerPath">
+            <summary>
+            验名证书路径
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DataSign.DataSignHelper.Password">
+            <summary>
+            签名证书密码
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DataSign.DataSignHelper.Sign(System.String)">
+            <summary>
+            签名
+            </summary>
+            <param name="strSrcData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign.DataSignHelper.VerifyData(System.String,System.String)">
+            <summary>
+            数据验签
+            </summary>
+            <param name="source"></param>
+            <param name="signature"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign.DataSignHelper.VerifyDataBase64(System.String,System.String)">
+            <summary>
+            Base64数据验签
+            </summary>
+            <param name="strSrcData"></param>
+            <param name="strSignData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign.DataSignHelper.ConvertFromPemPublicKey(System.String)">
+            <summary>
+            将pem格式公钥(1024 or 2048)转换为RSAParameters
+            </summary>
+            <param name="pemFileConent">pem公钥内容</param>
+            <returns>转换得到的RSAParamenters</returns>
+        </member>
+        <member name="M:Ucs.Common.DataSign.DataSignHelper.LoadCerContent(System.String)">
+            <summary>
+            加载证书内容
+            </summary>
+            <param name="strCerFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Ucs.Common.DateHelper._MinDate">
+            <summary>
+            定义系统处理的最小的时间
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.DateHelper._MaxDate">
+            <summary>
+            定义系统处理的最大时间
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.ConvertDateTimeInt">
+            <summary>
+            DateTime时间格式转换为Unix时间戳格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.MinDate">
+            <summary>
+            取系统处理的最小日期（取值：1900-01-01）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.MaxDate">
+            <summary>
+            取系统处理的最大日期（取值：2199-01-01）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.CompareMinDate(System.DateTime)">
+            <summary>
+            当前日期是否最小日期（最小日期取值：1970-01-01）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.TryParse(System.String)">
+            <summary>
+            尝试转换输入的日期格式的字符串
+            </summary>
+            <param name="dateFormatStr"></param>
+            <returns>成功返回目标时间，失败返回"1970.1.1"</returns>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.GetDateString(System.Nullable{System.DateTime})">
+            <summary>
+            获取日期字符串（yyyy-MM-dd）
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.GetDateTimeString(System.Nullable{System.DateTime})">
+            <summary>
+            取日期时间字符（yyyy-MM-dd HH:mm:ss）
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.DateHelper.GetDateTimeShortString(System.Nullable{System.DateTime})">
+            <summary>
+            取日期时间字符（yyyy-MM-dd HH:mm）
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.EnumUtils.ToEnum``1(System.Int32)">
+            <summary>
+            整型到枚举类型转换
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.EnumUtils.ToEnum``1(System.String)">
+            <summary>
+            字符串到枚举类型转换
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.EnumUtils.GetEnumDes(System.Enum)">
+            <summary>
+            获取描述信息
+            </summary>
+            <param name="en">枚举类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.ExtendMethod">
+            <summary>
+            静态扩展方法
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.ExtendMethod.CopyFrom``2(``1,``0,System.Collections.Generic.IList{System.String})">
+            <summary>
+            实体复制，只处理实体中的简单类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="target"></param>
+            <param name="source"></param>
+            <param name="ignoreProperties"></param>
+        </member>
+        <member name="M:Ucs.Common.HttpContextItem.TryGet``1(System.String,System.Func{``0})">
+            <summary>
+            取上下文中的Item节点
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="createFn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.HttpContextItem.Clear(System.String)">
+            <summary>
+            从上下文中清除指定的Key
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Ucs.Common.HttpContextItem.ClearAll">
+            <summary>
+            清空所有
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.HttpContextItem.Set(System.String,System.Object)">
+            <summary>
+            设置
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Ucs.Common.HttpContextItem.HttpContextNotNull">
+            <summary>
+            上下文是否为空
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.HttpHelper.GetClientIp">
+            <summary>  
+            获取客户端Ip  
+            </summary>  
+            <returns></returns>  
+        </member>
+        <member name="M:Ucs.Common.HttpHelper.PostData(System.String,System.String)">
+            <summary>
+            POST数据，默认超时时间60秒
+            </summary>
+            <param name="url">url</param>
+            <param name="data">data</param>
+        </member>
+        <member name="M:Ucs.Common.HttpHelper.PostData(System.String,System.String,System.Int32@)">
+            <summary>
+            POST数据，默认超时时间60秒
+            </summary>
+            <param name="url">url</param>
+            <param name="data">data</param>
+            <param name="statusCode">返回的应答码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.HttpHelper.PostData(System.String,System.String,System.Int32,System.Int32@)">
+            <summary>
+            POST数据
+            </summary>
+            <param name="url">url</param>
+            <param name="data">data</param>
+            <param name="timeOut">超时时间（单位秒）</param>
+            <param name="statusCode">返回的应答码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.HttpHelper.PostData(System.String,System.String,System.Text.Encoding,System.Int32@)">
+            <summary>
+            POST数据，默认超时时间60秒
+            </summary>
+            <param name="url">url</param>
+            <param name="data">data</param>
+            <param name="statusCode">返回的应答码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.HttpHelper.PostData(System.String,System.String,System.Int32,System.Text.Encoding,System.Int32@)">
+            <summary>
+            POST数据
+            </summary>
+            <param name="url">url</param>
+            <param name="data">data</param>
+            <param name="timeOut">超时时间（单位秒）</param>
+            <param name="code">编码方式</param>
+            <param name="statusCode">返回的应答码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.IdentityCardHelper">
+            <summary>
+            身份证助手类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.IdentityCardHelper.GetGender(System.String)">
+            <summary>
+            获取性别
+            </summary>
+            <param name="identityCard">身份证号</param>
+            <returns>0-未知，1-男，2-女</returns>
+        </member>
+        <member name="T:Ucs.Common.ImageSafeCode">
+            <summary>
+            图片验证码
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.ImageSafeCode.GenerateImgCodeFile(System.String@)">
+            <summary>
+            生成图形验证码
+            </summary>
+            <param name="code">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.ImageSafeCode.TwistImage(System.Drawing.Bitmap,System.Boolean,System.Double,System.Double)">
+            <summary> 
+            正弦曲线Wave扭曲图片 
+            </summary> 
+            <param name="srcBmp">图片路径</param> 
+            <param name="bXDir">如果扭曲则选择为True</param> 
+            <param name="nMultValue">波形的幅度倍数，越大扭曲的程度越高，一般为3</param> 
+            <param name="dPhase">波形的起始相位，取值区间[0-2*PI)</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:Ucs.Common.ImageSafeCode.GenerateVerifyImage(System.Int32,System.Web.HttpContext)">
+            <summary>
+            将创建好的图片输出到页面 
+            </summary>
+            <param name="nLen">声称验证码的个数</param>
+        </member>
+        <!-- 对于成员“M:Ucs.Common.ImageSafeCode.GetImagewidth(System.Int32)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Ucs.Common.ImageSafeCode.GetImageHeight">
+            <summary> 
+            得到验证码的高度 
+            </summary> 
+            <returns></returns> 
+        </member>
+        <member name="T:Ucs.Common.IOUtils">
+            <summary>
+            IO操作工具类
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.IOUtils.strRootFolder">
+            <summary>
+            根目录
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.#cctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.GetRootPath">
+            <summary>
+            读根目录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.SetRootPath(System.String)">
+            <summary>
+            写根目录
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.GetDirectoryItems">
+            <summary>
+            读取目录列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.GetDirectoryItems(System.String)">
+            <summary>
+            读取目录列表
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.Exists(System.String)">
+            <summary>
+            判断文件是否存在
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.GetFileItems">
+            <summary>
+            读取文件列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.GetFileItems(System.String)">
+            <summary>
+            读取文件列表
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.CreateFile(System.String,System.String)">
+            <summary>
+            创建文件
+            </summary>
+            <param name="filename"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.CreateFile(System.String,System.String,System.Byte[])">
+            <summary>
+            创建文件
+            </summary>
+            <param name="filename"></param>
+            <param name="path"></param>
+            <param name="contents"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.Read(System.String)">
+            <summary>
+            读取文件
+            </summary>
+            <param name="parentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.GetItemInfo(System.String)">
+            <summary>
+            读取文件信息
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.WriteAllText(System.String,System.String)">
+            <summary>
+            写入一个新文件，在文件中写入内容，然后关闭文件。如果目标文件已存在，则改写该文件。 
+            </summary>
+            <param name="parentName"></param>
+            <param name="contents"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.CopyFile(System.String,System.String)">
+            <summary>
+            复制文件
+            </summary>
+            <param name="sourceFileName"></param>
+            <param name="destFileName"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.DeleteFile(System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.MoveFile(System.String,System.String)">
+            <summary>
+            移动文件
+            </summary>
+            <param name="oldPath"></param>
+            <param name="newPath"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.CreateDirectory(System.String)">
+            <summary>
+            按path的指定创建所有目录和子目录
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.CreateFolder(System.String,System.String)">
+            <summary>
+            创建文件夹
+            </summary>
+            <param name="name"></param>
+            <param name="parentName"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.DeleteFolder(System.String)">
+            <summary>
+            删除文件夹
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.MoveFolder(System.String,System.String)">
+            <summary>
+            移动文件夹
+            </summary>
+            <param name="oldPath"></param>
+            <param name="newPath"></param>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.CopyFolder(System.String,System.String)">
+            <summary>
+            复制文件夹
+            </summary>
+            <param name="source"></param>
+            <param name="destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.IsSafeName(System.String)">
+            <summary>
+            判断是否为安全文件名
+            </summary>
+            <param name="strExtension"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.IsUnsafeName(System.String)">
+            <summary>
+            判断是否为不安全文件名
+            </summary>
+            <param name="strExtension">文件名、文件夹名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.IsCanEdit(System.String)">
+            <summary>
+            判断是否为可编辑文件
+            </summary>
+            <param name="strExtension">文件名、文件夹名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.IOUtils.GetBaseDirectory">
+            <summary>
+            取系统根目录绝对路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.FileItem">
+            <summary>
+            文件对象
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.FileItem.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._Name">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._FullName">
+            <summary>
+            Full Name
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._ExtName">
+            <summary>
+            扩展名
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._CreationDate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._IsFolder">
+            <summary>
+            是否为文件夹
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._Size">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._LastAccessDate">
+            <summary>
+            最近一次读时间
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._LastWriteDate">
+            <summary>
+            最近一次写时间
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._FileCount">
+            <summary>
+            文件数量
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.FileItem._SubFolderCount">
+            <summary>
+            子文件夹数量
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.FullName">
+            <summary>
+            文件或目录的完整目录
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.ExtName">
+            <summary>
+            文件扩展名
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.CreationDate">
+            <summary>
+             创建时间
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.Size">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.LastAccessDate">
+            <summary>
+            上次访问时间
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.LastWriteDate">
+            <summary>
+            上次读写时间
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.FileCount">
+            <summary>
+            文件个数
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.FileItem.SubFolderCount">
+            <summary>
+            目录个数
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.IPScanner">
+            <summary>
+            IP地址查询
+            IP库文件位置：AppDomain.CurrentDomain.BaseDirectory + "\\Resource\\qqwry.dat";
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.IPScanner.instance">
+            <summary>
+            IPScanner实例
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.IPScanner.syncHelper">
+            <summary>
+            加锁对象，线程安全
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.IPScanner.IPLocation(System.String)">
+            <summary>
+            获取IP地址
+            </summary>
+            <param name="ip"></param>
+        </member>
+        <member name="P:Ucs.Common.IPScanner.IP">
+            <summary>
+            Ip地址
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.IPScanner.Country">
+            <summary>
+            国家
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.IPScanner.Province">
+            <summary>
+            省份
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.IPScanner.City">
+            <summary>
+            市
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.IPScanner.Local">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.IPScanner.ErrMsg">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.JsonUtils">
+            <summary>
+            Json操作工具类
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.Logging">
+            <summary>
+            日志记录工具类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Logging.LogToFile(System.Object)">
+            <summary>
+            A private method that logs the exception information
+            </summary>
+            <param name="log">the log to be logged</param>
+        </member>
+        <member name="M:Ucs.Common.Logging.Log(System.String,System.String,System.String,Ucs.Common.LogType,System.String)">
+            <summary>
+            A private method that really do the work of logging
+            </summary>
+            <param name="obj">the object to be logged</param>
+            <param name="fileDirectory">the file name(including the file path</param>
+            <param name="fileExtension">the file extension</param>
+        </member>
+        <member name="M:Ucs.Common.Logging.LogError(System.String,System.Exception,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            记录异常日志
+            </summary>
+            <param name="message"></param>
+            <param name="ex"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:Ucs.Common.Logging.LogError(System.String,System.Exception,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.String)">
+            <summary>
+            记录异常日志
+            </summary>
+            <param name="message"></param>
+            <param name="ex"></param>
+            <param name="parameters"></param>
+            <param name="isErrorLog"></param>
+        </member>
+        <member name="T:Ucs.Common.LoginfoEntity">
+            <summary>
+            日志实体
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.LogType">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.LogType.App">
+            <summary>
+            应用程序日志(已过时)
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.LogType.Trace">
+            <summary>
+            应用程序跟踪日志(已过时)
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.LogType.Info">
+            <summary>
+            提示信息
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.LogType.Warn">
+            <summary>
+            警告日志
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.LogType.Error">
+            <summary>
+            异常日志
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.LogType.SystemLog">
+            <summary>
+            系统日志
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.MD5Unit.GetMD5Hash(System.String)">
+            <summary>
+            获取MD5码
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.MoneyHelper">
+            <summary>
+            货币操作工具类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.MoneyHelper.GetMoeny(System.Nullable{System.Int64})">
+            <summary>
+            输出存储的金额数据，算法dbValue/100并取两位小数
+            </summary>
+            <param name="dbValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.MoneyHelper.GetMoeny(System.Decimal)">
+            <summary>
+            输出存储的金额数据，算法dbValue/100并取两位小数
+            </summary>
+            <param name="dbValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.NpoiExcelHelper">
+            <summary>
+            导出Excel辅助类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.NpoiExcelHelper.GenerateXlsxBytes(System.String)">
+            <summary>
+            获取Excel文件的二进制流
+            </summary>
+            <param name="tableHtml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.NpoiExcelHelper.GenerateXlsxBytes(System.Data.DataTable)">
+            <summary>
+            获取Excel文件的二进制流
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.StringUtils">
+            <summary>
+            字符串操作工具类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.EncodeBase64(System.String)">
+            <summary>
+            Base64编码
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.DecodeBase64(System.String)">
+            <summary>
+            Base64解码
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.CreateVerifyCode(System.Boolean,System.Int32)">
+            <summary>
+            生成验证码
+            </summary>
+            <param name="numberFlag"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.ConvertStreamToString(System.IO.Stream)">
+            <summary>
+            将 Stream 转化成 string
+            </summary>
+            <param name="s">Stream流</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.ConvertSql(System.String)">
+            <summary>
+            对传递的参数字符串进行处理，防止注入式攻击
+            </summary>
+            <param name="str">传递的参数字符串</param>
+            <returns>String</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.ConvertJavaScript(System.String)">
+            <summary>
+            对传递的参数字符串进行处理，防止跨站脚本攻击
+            </summary>
+            <param name="str">传递的参数字符串</param>
+            <returns>String</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.ObjectToString(System.Object)">
+            <summary>
+            将Object类型转换为String类型
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.StringToJson(System.String,System.String)">
+            <summary>
+            过滤特殊字符
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.IsMobileNumber(System.String)">
+            <summary>
+            是否符合手机号码格式
+            </summary>
+            <param name="mobileNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.IsValidEmail(System.String)">
+            <summary>
+            邮件地址格式验证
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.IsValidURL(System.String)">
+            <summary>
+            URL地址格式验证
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.IsValidInt(System.String)">
+            <summary>
+            Int类型格式验证
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.IsNum(System.String)">
+            <summary>
+            检测字符串是否全为正整数
+            
+            我们以0为界限，将整数分为三大类
+            1、正整数，即大于0的整数如，1，2，3，…，n，…
+            2、0 既不是正整数，也不是负整数。
+            3、负整数，即小于0的整数如，-1，-2，-3，…，-n，…
+            4、0是整数。
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.IsDouble(System.String)">
+            <summary>
+            检测字符串是否全为数字型(包含正整数和负整数)
+            
+            我们以0为界限，将整数分为三大类
+            1、正整数，即大于0的整数如，1，2，3，…，n，…
+            2、0 既不是正整数，也不是负整数。
+            3、负整数，即小于0的整数如，-1，-2，-3，…，-n，…
+            4、0是整数。
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.Strings(System.Char,System.Int32)">
+            <summary>
+            输出由同一字符组成的指定长度的字符串
+            </summary>
+            <param name="Char">输出字符，如：A</param>
+            <param name="i">指定长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.MakeName">
+            <summary>
+            以日期为标准获得一个绝对的名称(yyMMddHHmmssfff)
+            </summary>
+            <returns>返回 String</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.Len(System.String)">
+            <summary>
+            返回字符串的真实长度，一个汉字字符相当于两个单位长度
+            </summary>
+            <param name="str">指定字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.getLen(System.String)">
+            <summary>
+            返回字符串的真实长度，一个汉字字符相当于两个单位长度(使用Encoding类)
+            </summary>
+            <param name="str">指定字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.CutLen(System.String,System.Int32)">
+            <summary>
+            按照字符串的实际长度截取指定长度的字符串
+            </summary>
+            <param name="str">字符串</param>
+            <param name="length">指定长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.CutLen(System.String,System.Int32,System.String)">
+            <summary>
+            按照字符串的实际长度截取指定长度的字符串
+            </summary>
+            <param name="str">字符串</param>
+            <param name="length">指定长度</param>
+            <param name="suffixStr">指定后缀字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.RandomNUM(System.Int32)">
+            <summary>
+            获取指定长度的纯数字随机数字串
+            </summary>
+            <param name="intLong">数字串长度</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.RandomSTR(System.Int32)">
+            <summary>
+            获取一个由26个小写字母组成的指定长度的随即字符串
+            </summary>
+            <param name="intLong">指定长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.RandomNUMSTR(System.Int32)">
+            <summary>
+            获取一个由数字和26个小写字母组成的指定长度的随即字符串
+            </summary>
+            <param name="intLong">指定长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.ConvertSpellFirst(System.String)">
+            <summary>
+            将指定字符串中的汉字转换为拼音首字母的缩写，其中非汉字字符将被删除
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.ConvertSpellFull(System.String)">
+            <summary>
+            将指定字符串中的汉字转换为拼音字母，其中非汉字字符将被删除
+            </summary>
+            <param name="text">要转换的文本内容</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.GetInt32(System.String)">
+            <summary>
+            得到AppSettings中的配置int信息
+            </summary>
+            <param name="key"></param>
+            <returns>默认0，正常数据则为对应的值</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.GetInt64(System.String)">
+            <summary>
+            得到AppSettings中的配置int信息
+            </summary>
+            <param name="key"></param>
+            <returns>默认0，正常数据则为对应的值</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.GetDouble(System.String)">
+            <summary>
+            字符串转换为double
+            </summary>
+            <param name="key"></param>
+            <returns>默认0，正常数据则为对应的值</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.ReplaceSpace(System.String)">
+            <summary>
+            去掉字符串中所有的空白字符" \r \n \t"
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.HtmlEncode(System.String)">
+            <summary>
+            Html编码
+            </summary>
+            <param name="input">要进行编辑的字符串</param>
+            <returns>Html编码后的字符串</returns>
+        </member>
+        <member name="M:Ucs.Common.StringUtils.HtmlDecode(System.String)">
+            <summary>
+            Html解码
+            </summary>
+            <param name="input">要进行解码的字符串</param>
+            <returns>解码后的字符串</returns>
+        </member>
+        <member name="T:Ucs.Common.Threading.ProcessorThread">
+            <summary>
+            应用线程处理器
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThread.processor">
+            <summary>
+            线程的处理者
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThread.active">
+            <summary>
+            执行状态
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThread.threadJoinTimeoutInterval">
+            <summary>
+            子线程停止主线程的超时时间
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThread.sleepMilliseconds">
+            <summary>
+            线程处理完一个逻辑进入下一个逻辑的休眠时间(毫秒)
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThread.thread">
+            <summary>
+            内部的真正线程对象
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThread.#ctor(Ucs.Common.Threading.IProcessor)">
+            <summary>
+            创建一个默认间隔时间的处理者线程
+            </summary>
+            <param name="procesor">处理者线程</param>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThread.#ctor(Ucs.Common.Threading.IProcessor,System.Int32)">
+            <summary>
+            构造函数，构造依赖
+            </summary>
+            <param name="processor">处理者线程</param>
+            <param name="sleepMilliseconds">线程间隔休眠时间</param>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThread.Start">
+            <summary>
+            处理者线程的启动方法
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThread.Stop">
+            <summary>
+            处理者线程的停止方法
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThread.Work">
+            <summary>
+            处理者线程的工作方法，调用处理者的Execute方法
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThread.Deactivate">
+            <summary>
+            内部公开的停止线程的方法
+            </summary>
+        </member>
+        <member name="P:Ucs.Common.Threading.ProcessorThread.Active">
+            <summary>
+            工作状态
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.Threading.ProcessorThreadPool">
+            <summary>
+            应用线程处理池
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.name">
+            <summary>
+            线程池的名称
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.processorFactory">
+            <summary>
+            处理者工厂
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.threadCount">
+            <summary>
+            线程数量
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.threads">
+            <summary>
+            已请求的线程列表
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.disposed">
+            <summary>
+            释放状态
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.started">
+            <summary>
+            启动状态
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.sleepMilliseconds">
+            <summary>
+            线程处理完一个逻辑进入下一个逻辑的休眠时间(毫秒)
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.Threading.ProcessorThreadPool.taskPoolStatusChange">
+            <summary>
+            状态改变log模板
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.#ctor(System.String,System.Int32,Ucs.Common.Threading.IProcessorFactory)">
+            <summary>
+            采用默认休眠时间(0)的构造函数
+            </summary>
+            <param name="name">名称</param>
+            <param name="threadCount">线程数</param>
+            <param name="processorFactory">处理者工厂类</param>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.#ctor(System.String,System.Int32,Ucs.Common.Threading.IProcessorFactory,System.Int32)">
+            <summary>
+            全参构造函数
+            </summary>
+            <param name="name">名称</param>
+            <param name="threadCount">线程数</param>
+            <param name="processorFactory">处理者工厂类</param>
+            <param name="sleepMilliseconds">线程间隔时间</param>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.Pause">
+            <summary>
+            暂停
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.Resume">
+            <summary>
+            重新开始
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.Start">
+            <summary>
+            启动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.StartThreads">
+            <summary>
+            启动所有线程
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ProcessorThreadPool.Dispose(System.Boolean)">
+            <summary>
+            释放资源
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Ucs.Common.Threading.ThreadActivity">
+            <summary>
+            线程活动 
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ThreadActivity.GetSleepTimeSpan">
+            <summary>
+            获取线程挂起时间间隔
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.Threading.ThreadActivity.Waiting(Ucs.Common.Threading.IActiveState)">
+            <summary>
+            等待
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:Ucs.Common.Threading.ThreadActivity.Working">
+            <summary>
+            工作
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.Threading.ThreadSleep">
+            <summary>
+            当前线程挂起处理类
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.Threading.ThreadSleep.While(System.Int32,Ucs.Common.Threading.IActiveState)">
+            <summary>
+            当前线程挂起一会儿
+            </summary>
+            <param name="ms">时间长度（单位：毫秒）</param>
+            <param name="state">是否需要挂起当前线程</param>
+        </member>
+        <member name="M:Ucs.Common.Threading.ThreadSleep.While(System.Int32,Ucs.Common.Threading.IActiveState,System.Int32)">
+            <summary>
+            当前线程挂起一会儿
+            </summary>
+            <param name="ms">时间长度（单位：毫秒）</param>
+            <param name="state">是否需要挂起当前线程</param>
+            <param name="step"></param>
+        </member>
+        <member name="T:Ucs.Common.TimeSpanUtil">
+            <summary>
+            持续时长监控工具类
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.TimeSpanUtil.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="F:Ucs.Common.TimeSpanUtil.EndTime">
+            <summary>
+            结果时间
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.TimeSpanUtil.Start">
+            <summary>
+            开始
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.TimeSpanUtil.End">
+            <summary>
+            结束
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.TimeSpanUtil.GetDuration">
+            <summary>
+            获取持续时间（单位：毫秒）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.TimeSpanUtil.Check">
+            <summary>
+            检查StartTime、EndTime
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucs.Common.TimeSpanUtil.GetTimeSpan">
+            <summary>
+            获取持处理时长（单位：毫秒）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ucs.Common.UrlEncoderUtils">
+            <summary>
+            URL特殊符号匹配
+            </summary>
+        </member>
+        <member name="M:Ucs.Common.UrlEncoderUtils.HasUrlEncoded(System.String)">
+            <summary>
+            是否经过URL编码
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Ucs.Common.UrlEncoderUtils.Dict">
+            <summary>
+            特殊字符集
+            </summary>
+        </member>
+        <member name="T:Ucs.Common.URLUtils">
+            <summary>
+            URL工具类
+            </summary>
+        </member>
+    </members>
+</doc>

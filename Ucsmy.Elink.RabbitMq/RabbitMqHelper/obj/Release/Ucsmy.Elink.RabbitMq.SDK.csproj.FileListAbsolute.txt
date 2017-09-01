@@ -1,0 +1,11 @@
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\Ucsmy.Elink.RabbitMq.SDK.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\Ucsmy.Elink.RabbitMq.SDK.pdb
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\Newtonsoft.Json.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\RabbitMQ.Client.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\Ucs.Common.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\NPOI.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\Ucs.Common.pdb
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\bin\Release\Ucs.Common.xml
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\obj\Release\Ucsmy.Elink.RabbitMq.SDK.csprojResolveAssemblyReference.cache
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\obj\Release\Ucsmy.Elink.RabbitMq.SDK.dll
+E:\Project2\05_源码\elinkSolution\02_基础组件\Ucsmy.Elink.RabbitMq\RabbitMqHelper\obj\Release\Ucsmy.Elink.RabbitMq.SDK.pdb

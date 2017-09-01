@@ -1,0 +1,8 @@
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMqHelper.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMqHelper.pdb
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMQ.Client.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\Ucs.Common.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\bin\Debug\RabbitMQ.Client.xml
+D:\MyProject\Toys\Test\RabbitMqHelper\obj\Debug\RabbitMqHelper.dll
+D:\MyProject\Toys\Test\RabbitMqHelper\obj\Debug\RabbitMqHelper.pdb
+D:\MyProject\Toys\Test\RabbitMqHelper\obj\Debug\UCS.RabbitMqHelper.csprojResolveAssemblyReference.cache
